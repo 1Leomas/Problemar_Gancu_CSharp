@@ -30,11 +30,29 @@ namespace OII_01
             }
 
             Console.WriteLine("\nc)");
-            for (int i = 0; i <= 4; i++)
+            for (int i = 0; i < 4; i++)
             {
-                for (int j = 0; j < 4 - i; j++)
+                for (int x = 0; x < i; x++)
                 {
+                    Console.Write(" ");
+                }
+                for (int j = i; j < 4 ; j++)
+                {
+                    
+                    Console.Write($"{caracter} ");
+                }
+                Console.WriteLine();
+            }
 
+            Console.WriteLine("\nd)");
+            for (var i = 0; i < 4; i++)
+            {
+                for (int x = 3; x > i; x--)
+                {
+                    Console.Write(" ");
+                }
+                for (var j = 0; j <= i; j++)
+                {
                     Console.Write($"{caracter} ");
                 }
                 Console.WriteLine();
@@ -42,58 +60,3 @@ namespace OII_01
         }
     }
 }
-
-/*static void Main(string[] args)
-{
-    string carcater = Console.ReadLine();
-
-    for (int i = 0; i < 5; i++)
-    {
-        for (int j = 0; j <= i; j++)
-        {
-            Console.Write(carcater);
-        }
-        Console.WriteLine();
-    }
-
-    Console.WriteLine(" ");
-
-    for (int i = 0; i < 5; i++)
-    {
-        for (int j = 5; j > i; j--)
-        {
-            Console.Write(carcater);
-        }
-        Console.WriteLine();
-    }
-
-    Console.WriteLine(" ");
-
-    for (int i = 0; i < 5; i++)
-    {
-        for (int j = 5; j > i; j--)
-        {
-            Console.Write(" ");
-        }
-        for (int j = 0; j <= i; j++)
-        {
-            Console.Write(carcater);
-        }
-        Console.WriteLine();
-    }
-
-    Console.WriteLine(" ");
-
-    for (int i = 0; i < 5; i++)
-    {
-        for (int j = 0; j <= i; j++)
-        {
-            Console.Write(" ");
-        }
-        for (int j = 5; j > i; j--)
-        {
-            Console.Write(carcater);
-        }
-        Console.WriteLine();
-    }
-}*/
